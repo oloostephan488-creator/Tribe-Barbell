@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.header {
+    background-color: #111111;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 45px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin-right: 15px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sectionOne {
+    position: relative;
+    width: 100%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/bckg.jpg'); 
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat;
+    padding: 70px 10px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sectionOne h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sectionOne .slogan {
+    font-size: 20px;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sectionTwo {
+    background-color: white;
+    padding: 30px 15px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 250px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.about-text h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.sectionThree {
+    background-color: #dddddd;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.sectionThree h2 {
+    margin-bottom: 20px;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pricing-card, .benefits-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #999;
+    width: 45%;
+}
+
+.benefits-card ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sectionGallery {
+    background-color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.sectionGallery h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    border: 2px solid black;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .img-overlay {
+    opacity: 1;
+}
+
+.img-overlay span {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.sectionFour {
+    background-color: white;
+    padding: 30px 15px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-map {
+    width: 50%;
+}
+
+.contact-map img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #111111;
+    color: white;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: yellow;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.social-links a i {
+    margin-right: 3px;
+}
+
+.footer-right p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
